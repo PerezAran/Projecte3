@@ -12,7 +12,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 3. Hem de posar el nostre **correu electrònic** i crea una **contrasenya**.
 4. I per últim verificar el teu correu electrònic.
 
->  *[img/01-bitwarden-instal.png]* 
+>  *[img/imatge_1.jpg]* 
 
 ---
 
