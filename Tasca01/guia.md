@@ -7,12 +7,12 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 ##  1. Instal·lació i Configuració Inicial
 
 ###  Pas 1: Crear un compte Bitwarden
-1. Accedeix a [https://bitwarden.com](https://bitwarden.com)
-2. Fes clic a **Get Started** → **Create Account**.
-3. Introdueix un **correu corporatiu** i crea una **contrasenya mestra forta**.
-4. Verifica el teu correu electrònic.
+1. Hem de accedir aquest enllaç: [https://bitwarden.com](https://bitwarden.com)
+2. Hem de fer clic a **Get Started** i després **Create Account**.
+3. Hem de posar el nostre **correu electrònic** i crea una **contrasenya**.
+4. I per últim verificar el teu correu electrònic.
 
->  *[img/01-bitwarden-instal.png]* (captura del registre)
+>  *[img/01-bitwarden-instal.png]* 
 
 ---
 
