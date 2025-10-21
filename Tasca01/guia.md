@@ -31,7 +31,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
    - Inclou **majúscules, minúscules, números i símbols**
 3. Clica **Generate** i copia la contrasenya.
 
->  *[img/02-bitwarden-generate.png]*
+>   ![foto](img/imatge_2.jpg) 
 
 ---
 
@@ -45,7 +45,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 5. Contrasenya: enganxa la generada.
 6. Desa el registre.
 
->  *[img/03-bitwarden-save.png]*
+>   ![foto](img/imatge_3.jpg) 
 
 ---
 
@@ -54,7 +54,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 2. Quan el navegador et pregunti “Save in Bitwarden?”, selecciona **Save**.
 3. A partir d’ara, Bitwarden emplenarà automàticament aquest login.
 
->  *[img/04-bitwarden-extension.png]*
+>   ![foto](img/imatge_4.jpg) 
 
 ---
 
@@ -65,7 +65,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 2. Escriu la contrasenya mestra per confirmar.
 3. Desa el fitxer `.json` o `.csv` (xifrat).
 
->  *[img/05-bitwarden-export.png]*
+>   ![foto](img/imatge_5.jpg) 
 
 ---
 
