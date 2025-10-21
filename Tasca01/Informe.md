@@ -6,9 +6,9 @@ L’incident de seguretat recent a EverPia ha posat de manifest un risc crític:
 
 Els principals atacs que aprofiten aquest tipus de vulnerabilitats són:
 
-- **Atac de diccionari**: els ciberdelinqüents proven contrasenyes comunes i predecibles (com “123456”, “password” o “qwerty”) fins que troben una coincidència.
-- **Credential stuffing**: utilitzen conjunts de credencials filtrades d’altres serveis per accedir a nous comptes (ja que molts usuaris reutilitzen la mateixa contrasenya).
-- **Phishing i enginyeria social**: quan un usuari cau en un engany i proporciona les seves credencials a un atacant.
+- **Atac de diccionari**: Els ciberdelinqüents proven contrasenyes comunes que normalment utilitzem com per exemple, “123456”, "1111" fins que coinsideix.
+- **Credential stuffing**: Utilitzen conjunts de credencials filtrades d’altres serveis per accedir a nous comptes (ja que molts usuaris reutilitzen la mateixa contrasenya).
+- **Phishing i enginyeria social**: Quan un usuari cau en un engany i proporciona les seves credencials a un atacant.
 - **Brute force**: proves automàtiques de milers de combinacions fins a trobar la correcta.
 
 Aquests atacs tenen com a conseqüència **filtracions de dades**, **pèrdua de reputació** i **dany econòmic**.  
