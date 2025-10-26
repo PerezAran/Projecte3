@@ -1,6 +1,5 @@
 # Fase 1: Informe Tècnic — Gestor de Contrasenyes
 
-## Introducció i Justificació
 
 L’incident de seguretat recent a EverPia ha posat de manifest un risc crític: l’ús de **contrasenyes febles o reutilitzades**. Aquest tipus de pràctiques són una de les principals causes de compromís de comptes dins d’empreses i organitzacions.
 
@@ -20,7 +19,7 @@ Els **gestors de contrasenyes** permeten mitigar aquests riscos, ja que:
 - Xifren les dades localment amb una **contrasenya mestra**.
 - Faciliten l’ús mitjançant extensions de navegador i aplicacions mòbils.
 
----
+
 
 ## Comparativa Tècnica: Bitwarden vs KeePassXC
 
@@ -37,7 +36,6 @@ Els **gestors de contrasenyes** permeten mitigar aquests riscos, ja que:
 | **Còpies de seguretat**              | Exportació xifrada des del compte                           | Fitxer local manual                                         |
 | **Dependència d’Internet**           | Necessita connexió per sincronitzar                         | No necessària                                               |
 
----
 
 ## Avantatges i Inconvenients
 
@@ -49,11 +47,7 @@ Els **gestors de contrasenyes** permeten mitigar aquests riscos, ja que:
 | **Gestió centralitzada** | Sí, ideal per equips i empreses. | No, cada usuari gestiona el seu fitxer. |
 | **Cost** | Gratuït per a ús personal; Premium opcional. | Gratuït totalment. |
 
----
 
-## Recomanació
-
-Després de comparar ambdues opcions, la recomanació per al personal tècnic d’EverPia és **adoptar Bitwarden** com a gestor de contrasenyes corporatiu.
 
 ### Justificació:
 - Ofereix **xifratge end-to-end** verificat.
