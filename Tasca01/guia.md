@@ -2,7 +2,7 @@
 
 Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per gestionar contrasenyes de forma segura dins de l’empresa EverPia.
 
----
+
 
 ##  1. Instal·lació i Configuració Inicial
 
@@ -14,13 +14,13 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 
 >  ![foto](img/imatge1.1.jpg) 
 
----
+
 
 ###  Pas 2: Iniciar sessió i accedir al gestor
 - Entra a **https://vault.bitwarden.com/**
 - S´obrirà la **caixa forta** , on es guarden totes les credencials.
 
----
+
 
 ##  2. Generació de Contrasenyes Segures
 
@@ -32,7 +32,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 
 >   ![foto](img/imatge_2.jpg) 
 
----
+
 
 ##  3. Desar Credencials i Emplenament Automàtic
 
@@ -46,15 +46,13 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 
 >   ![foto](img/imatge_2_.jpg) 
 
----
 
 ### Exemple 2: Credencial d’una aplicació o servei web
 1. Obre el lloc web → Inicia sessió.
 2. Quan el navegador et pregunti “Save in Bitwarden?”, selecciona **Save**.
 3. A partir d’ara, Bitwarden emplenarà automàticament aquest login.
 
->   
----
+
 
 ##  4. Gestió de Còpies de Seguretat (Backup)
 
@@ -66,7 +64,6 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 >    ![foto](img/imatge_·.jpg) 
 
 
----
 
 ## Conclusió
 
