@@ -18,8 +18,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 
 ###  Pas 2: Iniciar sessió i accedir al gestor
 - Entra a **https://vault.bitwarden.com/**
-- Accedeix amb el teu compte nou.
-- Se t’obrirà la **caixa forta** (Vault), on es guarden totes les credencials.
+- S´obrirà la **caixa forta** , on es guarden totes les credencials.
 
 ---
 
@@ -54,8 +53,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 2. Quan el navegador et pregunti “Save in Bitwarden?”, selecciona **Save**.
 3. A partir d’ara, Bitwarden emplenarà automàticament aquest login.
 
->   ![foto](img/imatge_4.jpg) 
-
+>   
 ---
 
 ##  4. Gestió de Còpies de Seguretat (Backup)
@@ -67,21 +65,6 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 
 >   ![foto](img/imatge_5.jpg) 
 
----
-
-###  Recomanació de seguretat
-- Desa la còpia de seguretat en una **clau USB xifrada** o **disc dur segur**.
-- Si cal emmagatzematge al núvol, utilitza **xifrat addicional (VeraCrypt o 7-Zip xifrat)**.
-- **No deixis còpies sense xifrar** en carpetes compartides.
-
----
-
-##  Bones pràctiques
-
-- No reutilitzar contrasenyes, i tampoc en entorns interns.
-- Canvia la contrasenya mestra de tant en quan.
-- Mantenir actualitzada l’extensió i aplicació de Bitwarden.
-- Evita introduir credencials en dispositius no corporatius.
 
 ---
 
@@ -92,5 +75,4 @@ Amb Bitwarden, el personal tècnic d’EverPia pot:
 - Compartir contrasenyes d’equip sense exposar-les.
 - Garantir la continuïtat operativa i la seguretat corporativa.
 
->  La seguretat comença amb una bona gestió de les contrasenyes.
 
