@@ -44,7 +44,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 5. Contrasenya: enganxa la generada.
 6. Desa el registre.
 
->   ![foto](img/imatge_3.jpg) 
+>   ![foto](img/imatge_2_.jpg) 
 
 ---
 
@@ -63,7 +63,7 @@ Aquesta guia explica com instal·lar, configurar i utilitzar **Bitwarden** per g
 2. Escriu la contrasenya mestra per confirmar.
 3. Desa el fitxer `.json` o `.csv` (xifrat).
 
->   ![foto](img/imatge_5.jpg) 
+>    ![foto](img/imatge_..jpg) 
 
 
 ---
