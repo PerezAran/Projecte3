@@ -2,7 +2,6 @@
 
 Projecte: Implementació del Servei de Directori LDAP per a Entorn de Proves Innovatech
 
-
 ---
 
 ### **1\. Objecte de l'Encàrrec**
