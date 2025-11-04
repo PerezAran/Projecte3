@@ -2,7 +2,7 @@
 
 **COMANDA 1:**  
 
-![foto](img/imatge1.1.jpg)
+![foto](img/imatge1.jpg)
 
 Obrim la terminal, i posem la comanda **dig xtec.cat A** per consultar el registre DNS de tipus A del domini xtec.cat .  
 El que fa és buscar el valor TTL (temps de vida, en segons).
