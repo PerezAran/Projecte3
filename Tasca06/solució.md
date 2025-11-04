@@ -32,17 +32,17 @@ El que fa aquesta comanda és mostrar quin domini està associat a la IP que ind
 
 Amb aquesta comanda aconseguim fer la consulta DNS directa per obtenir les adreces IP associades a un nom de domini, que en aquest cas es, tecnocampus.cat.
 
-![foto](img/imatgjpg)
+![foto](img/imatge8.jpg)
 
 Farem comanda “nslookup” i posarem set  type=NS 
 Tecnocampus.cat  per poder veure els name server dels ns.
 
-![foto](img/imatge4.jpg)
+![foto](img/imatge5.jpg)
 
 Mostra informació del servidor DNS per defecte que està utilitzant el teu ordinador o xarxa.
 
-![foto](img/imatge4.jpg)
+![foto](img/imatge6.jpg)
 
 Mostra una altra consulta feta amb el comandament nslookup, i en aquest cas s’està consultant el registre A del domini tecnocampus.cat. +
 
-![foto](img/imatge4.jpg)
+![foto](img/imatge7.jpg)
