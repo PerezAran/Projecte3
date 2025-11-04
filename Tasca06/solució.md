@@ -9,7 +9,7 @@ El que fa és buscar el valor TTL (temps de vida, en segons).
 
 **COMANDA 2:**  
 
-![foto](img/imatge2jpg)
+![foto](img/imatge2.jpg)
 
 El que fa la comanda **dig tecnocampus.cat NS** és treballar en un entorn de proves segur i aïllat, on es poden fer pràctiques o comprovacions de xarxa, com per exemple consultes DNS, sense afectar el sistema real.
 
