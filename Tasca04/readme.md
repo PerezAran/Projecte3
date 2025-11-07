@@ -1,92 +1,90 @@
-Fase 1: Organigrama
+# Breu descripció
 
+**Innovatech**, una start-up tecnològica emergent, està experimentant un ràpid creixement i pateix un caos en la gestió dels seus usuaris i accessos.  
+Actualment, cada servei intern (servidor de fitxers, wiki de documentació, etc.) utilitza la seva pròpia base de dades d'usuaris i contrasenyes i, a més, als ordinadors clients s’usa autentificació local.  
+Això genera diversos problemes crítics:
 
+- **Ineficiència Operativa:** Cada cop que s'incorpora o marxa un empleat, l'equip tècnic ha de crear o eliminar el compte en múltiples sistemes.  
+- **Risc de Seguretat:** Els usuaris sovint acaben reutilitzant contrasenyes entre serveis per evitar l'oblit.  
+- **Manca d'Escalabilitat:** A mesura que Innovatech afegeix nous serveis, el problema es fa insostenible.
 
+El CEO d’Innovatech ha contactat amb **EverPia** per tal d’implementar una solució d’autenticació centralitzada.  
+La solució proposada és utilitzar **OpenLDAP (Lightweight Directory Access Protocol)** per ser una solució robusta i de codi obert, que s’alinea amb l’esperit d’Innovatech, ja que tots els ordinadors de l’empresa usen **GNU/Linux**.
 
+La vostra missió serà implementar el servei **OpenLDAP** en un servidor Linux.  
+Això implica:
+- Instal·lar el servei.  
+- Configurar el domini base.  
+- Crear la jerarquia d'unitats organitzatives.  
+- Integrar usuaris i grups per donar accés a altres serveis de xarxa.  
+- Configurar un equip client per autenticar els usuaris mitjançant el directori.
 
+S’ha redactat un document on s’especifica clarament la feina que s’ha de desenvolupar.  
+El teniu disponible en el **plec de condicions tècniques** (també al Moodle de l’assignatura).
 
+---
 
+### Material de classe (disponible al Moodle)
+- UD04.AA1 Serveis de Directori  
+- UD04.AA2 Instal·lació OpenLDAP  
+- UD04.AA3 Configuració del directori  
+- UD04.AA5 Agregar client al directori  
 
+---
 
+## Objectius específics de la tasca / Finalitat de la tasca
 
+- Instal·lació i configuració de serveis de directori en sistemes lliures.  
+- Gestió d’objectes del directori: OU, grups i usuaris usant comandes i eines de gestió gràfica.  
+- Configurar els clients per disposar d’autenticació centralitzada.  
 
+---
 
+## Competències treballades
 
+- **a)** Determinar la logística associada a les operacions d’instal·lació, configuració i manteniment de sistemes microinformàtics.  
+- **f)** Instal·lar, configurar i mantenir serveis multiusuari, aplicacions i dispositius compartits en un entorn de xarxa local.  
+- **l)** Assessorar i assistir al client, canalitzant a un nivell superior els supòsits que ho requereixin.  
+- **q)** Complir amb els objectius de la producció, col·laborant amb l’equip de treball i actuant conforme als principis de responsabilitat i tolerància.  
 
+---
 
+## RA(s) de la tasca
 
+- **0224.RA2** Gestiona usuaris i grups de sistemes operatius en xarxa, interpretant especificacions i aplicant eines del sistema.  
+- **0224.RA3** Realitza tasques de gestió sobre dominis identificant necessitats i aplicant eines d'administració de dominis.  
 
+---
 
+## CA(s) de la tasca
 
+- **2.1** Configura i gestiona comptes d'usuari.  
+- **2.4** Distingeix el propòsit dels grups, els seus tipus i àmbits.  
+- **2.5** Configura i gestiona grups.  
+- **2.6** Gestiona la pertinença d'usuaris a grups.  
+- **3.1** Identifica la funció del servei de directori, els seus elements i nomenclatura.  
+- **3.2** Reconeix el concepte de domini i les seves funcions.  
+- **3.4** Realitza la instal·lació del servei de directori.  
+- **3.5** Realitza la configuració bàsica del servei de directori.  
+- **3.6** Utilitza agrupacions d'elements per a la creació de models administratius.  
+- **3.7** Analitza l'estructura del servei de directori.  
+- **3.8** Utilitza eines d'administració de dominis.  
 
+---
 
-Fase 2: Analitzar l’entorn real de l’empresa. Microentorn i Macroentorn
+## C(s) de la tasca
 
-MACROENTORN 
-- Econòmics: El nivell d’activitat està lligat a la situació econòmica. Per exemple, durant les crisis, la reutilització tendeix a augmentar, mentre que en períodes de creixement, el reciclatge pren més protagonisme
+- **2.** Gestió d’usuaris i grups  
+- **3.** Gestió de dominis  
 
-- Socioculturals: La població cada cop és més conscient de l'importància de la sostenibilitat i del que aporta el reciclatge.
+---
 
-- Polítics i legals: Les lleis europees i catalanes afavoreixen l’economia circular i regulen la gestió de residus.
+## Capacitats clau treballades
 
-- Tecnològics: Els ràpids avenços obliguen les empreses a adaptar-se a nous dispositius i materials.
-
-- Mediambientals: L’interès per reduir residus i combatre el canvi climàtic impulsa el sector.
-
-- Internacionals: Les tendències globals i els preus de les matèries primeres poden tenir un impacte tant positiu com negatiu.
-
-
-      MICROENTORNS 
-
-- Competència: Merkia al se una empresa que recondisiona dispositius electrònics per després vendre'ls, té varies empresas de competència.
-
-Per exemple; Media markt, ja que media markt vent dispositius electrònics tant nous com recondicionats es una gran part de la competència, pensant en la venta a particulars.
-
-
-I una gran competencia de venta de dispositius a empreses sería, Borax Aliban, una empresa de gran nivell a barcelona que es dedica al mateix. Link: Media Markt Link: Borax Aliban
-
-- Productes substitutius: Els productes substitutius de merkia serian els mòbils, ordinadors… més nous, per exemple ara mateix si al iphone 17 baixes al preu 500 euros, doncs aquest podria ser un producte substitutiu.
-
-
-- Proveïdors i clients: 
-
-
-
-Fase 3: Defenir els canvis de l´entorn de l´empresa
-
-
-Fase 4: Del món VUCA al món BANI
-
-
-Fase 5: Fer el CANVAS del model de negoci del vostre client per a definir com l’empresa crea i capta valor i l’ofereix als seus clients
-
-Fase 6: Descripció de la tipologia i patró del negoci
-
-Fase 7: Aplicar la intel·ligència artificial al disseny del model de negoci
-
-
-
-
-
-Fase 8: DAFO per comprovar la viabilitat potencial del client. Planificació de l’estratègia de futur
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fase 9: L’empresa com a sistema. Àrees funcionals de l’empresa. Funcionament de l’empresa. L’estructura organitzativa de l’empresa.
-Fase 10: La cultura empresarial i la imatge corporativa. 
-
-
-Fase 11: Missió, visió i valors de l’empresa.
-
-Fase 12: Accions concretes i RSC. Balanç social
-
+- Autonomia  
+- Innovació  
+- Relació interpersonal  
+- Organització del treball  
+- Responsabilitat  
+- Treball en equip  
+- Resolució de problemes  
