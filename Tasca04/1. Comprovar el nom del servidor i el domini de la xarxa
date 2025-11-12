@@ -1,0 +1,15 @@
+# Configuració de la màquina Server
+
+Al primer que farem serà marcar la comanda `sudo nano /etc/hosts`, i haurem de tenir aquestes configuracions per editar el nom del domini.
+
+![Configuració /etc/hosts](img)
+
+Per poder comprovar el nom i el domini del servidor farem un `hostname` i un `hostname -f`.
+
+![Comprovació hostname](img)
+
+Per començar l'activitat hem de tenir els adaptadors connectors d'aquesta manera:
+
+- **Adaptador 1:** Xarxa NAT o Adaptador pont  
+- **Adaptador 2:** Host-only
+
