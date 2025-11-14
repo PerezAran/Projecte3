@@ -25,4 +25,4 @@ El teniu disponible en el **plec de condicions tècniques** (també al Moodle de
 ---
 Index:
 
-[Requeriments d´Infraestructura inicial] (Requeriments d'Infraestructura Inicial.md)
+[Requeriments d´Infraestructura inicial](Requeriments d'Infraestructura Inicial.md)
