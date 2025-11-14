@@ -9,18 +9,18 @@ Primer de tot haurem de crear una màquina virtual, hi posarem 2 CPUs i 8GB (ja 
 | /dev/sdc | Per mirroring | **10 GB** |
 | /dev/sdd | Per snapshots o expansió | **10 GB** |
 
-![foto](img/2.jpg)
+![foto](imga/2.jpg)
 4. # **Detecció de discos:**
 
 Un cop hàgiu instal·lat tot el os, obrirem la terminal i introduirem la comanda ‘fdisk \-l’ per comprovar que el sistema ha detectat els discos com a particions.
 
-![foto](img/3.jpg)
+![foto](imga/3.jpg)
 
 5. # **Inicialització de discos:**
 
 Ara crearem els volums físics amb la comanda: ‘pvcreate’ a partir de les particions de la part anterior (sdb/sdc/sdd).
 
-![foto](img/4.jpg)
+![foto](imga/4.jpg)
 
 **Recordatori:** Recomano que abans de començar a posar totes les comandes, recomano posar la comanda sudo su, per realitzar totes les comandes amb root així tots els processos seran més ràpids a la hora de realizarlos
 
@@ -28,38 +28,38 @@ Ara crearem els volums físics amb la comanda: ‘pvcreate’ a partir de les pa
 
 Seguidament crearem el grup de volums, mitjançant la comanda: ‘vgcreate volgrup’ posteriorment hi podem agregar o eliminar volums. En el meu cas la comanda completa serà: ‘vgcreate volgrup /dev/sdb /dev/sdc /dev/sdd’
 
-![foto](img/5.jpg)
+![foto](imga/5.jpg)
 
 I si en algun cas volem afegir algún nou volum en el grup, només haurem d'introduir la comanda: ‘vgextend volgrup nom\_disc’
 
 Finalment per veure característiques sobre el grup de volum creat anteriorment ho farem amb la comanda: ‘vgdisplay’ veurem info com el nom del grup, el estat, el format, les àrees que abarca i moltes coses més que les podeu veure en la imatge.
 
-![foto](img/6.jpg)
+![foto](imga/6.jpg)
 
 7. # **Crear volums lògics:**
 
 Es creen a partir dels grups de volums indicant la mida, el grup de volum i el nom que se li vol donar al volum lògic, és fa amb la comanda: ‘lvcreate’
 
-![foto](img/7.jpg) 
+![foto](imga/7.jpg) 
 I ara amb la comanda: ‘vgdisplay’ s’observa com l’espai està siguent utilitzat.  
 Recordo que els volums lògics són com les particions, per tant, per utilitzar-se caldrà formatar-los amb un sistema d’arxius.
 
-![foto](img/8.jpg)
+![foto](imga/8.jpg)
 
 **1-** I ara per muntar un volum lògic parcialment, caldrà utilitzar la comanda ‘mount’ per muntar el volum cap la carpeta creada en l’anterior pas
 
-![foto](img/9.jpg)
+![foto](imga/9.jpg)
 
 ***PD:** Aquesta acció caldria fer-la cada cop al iniciar la máquina.*
 
 **2-** I si volem que el volum logic estigui muntat de forma permanent, cal editar l’arxiu ‘/etc/fstab’
 
-![foto](img/10.jpg)
+![foto](imga/10.jpg)
 
 Copiarem la última línea del codi on podeu veure que he agregat una línia de codi. I si volem modificar la mida d’un lv usarem: **lvextend** (per estendre el volum) i **lvreduce** (per reduir la mida). I recordo que abans de modificar un lv sempre s’ha de desmuntar perquè no estigui en ús: **umount /mnt/lv01**
 
 Si en algun cas volem ampliar el volum lògic, la mida s’indica amb el paràmetre \-L:  
-![foto](img/11.jpg)
+![foto](imga/11.jpg)
 
 I per ampliar el sistema de fitxers per poder aprofitar la mida extra que anteriorment hem afegit, ho farem amb: ‘resize2fs’
 
@@ -69,15 +69,15 @@ I si volem fer algun tipus de comprovació per veure que els canvis s’han desa
 
 **PVS:** Mostra els volums físics creats indicant si estan assignats algun grup de volums.
 
-![foto](img/12.jpg)
+![foto](imga/12.jpg)
 
 **VGS:** Serveix per veure els grups de volums existents i indicant els nombre de volums físics que el formen, els LV definits, l’espai total i l’espai sense assignar.
 
-![foto](img/13.jpg)
+![foto](imga/13.jpg)
 
 **VGS:** Mostra els LV definits amb les seves propietats.
 
-![foto](img/14.jpg)
+![foto](imga/14.jpg)
 
 Si en algun cas volem eliminar un volum lògic, només caldria fer dos passos:
 
@@ -86,7 +86,7 @@ Si en algun cas volem eliminar un volum lògic, només caldria fer dos passos:
 
 Per desmuntar el volum lògic, com us he dit abans, seria amb la comanda: ‘umount /mnt/VolumLogic01’ . Finalment per eliminar un cop desmontat el volum lògic: ‘lvremove /dev/volgrup/VolumLogic01’
 
-![foto](img/15.jpg)
+![foto](imga/15.jpg)
 
 Seguidament passarem amb les ‘snapshots’, són una còpia exacte d’un LV que conté totes les dades en el moment que es crea la instantània. És molt útil perquè permet fer les còpies de la informació sense parar els serveis:
 
@@ -97,11 +97,11 @@ Per posar-ho en pràctica, crearem una instantània, amb una mida i nom, a part 
 
 **comanda:** ‘lvcreate \-L 100M \-s \-n copiaVolumLogic01 /dev/volgrup/VolumLogic01’
 
-![foto](img/16.jpg)
+![foto](imga/16.jpg)
 
 I per veure els dos lv creats i com la còpia apunta al volum original com us he indicat abans, ho realitzarem amb  la comanda: ‘lvs volgrup’
 
-![foto](img/17.jpg)
+![foto](imga/17.jpg)
 
 Un cop haguim vist que la còpia esta creada i ubicada correctament, muntarem la còpia per veure el contingut.
 
@@ -109,15 +109,15 @@ seguident, creem un grup de volums amb dos dels volums físics, amb la comanda i
 
 En el meu cas he tingut que treure’l del grup actual, netejar la informació de el lvm del disc, reinicializarlo com a pv nou i finalment crear el nou grup amb el nom de: vg\_mirror com diu la tasca
 
-![foto](img/18.jpg)
+![foto](imga/18.jpg)
 
 Seguidament crearem el sistema del mirror simple amb la comanda anteriorment feta en altres passos: ‘lvcreate \-L 90M \-m1 \-n mirrorlv vg\_mirror’ Aqui estem dien que crearem un nou vl, de 90MiB, amb el nom de: mirrorlv.
 
-![foto](img/19.jpg)
+![foto](imga/19.jpg)
 
 Finalment podrem observar com el volum lògic està format pels miralls introduïts en el pas anterior i dels logs, que serveixen per mantenir la sincronització:
 
-![foto](img/20.jpg)
+![foto](imga/20.jpg)
 
 Podem identificar gràcies a la comanda: ‘lva \-a \-o \+devices’ el nombre de miralls que es vulguin mantenir amb el paràmetre **\-m** a **lvcreate**.
 
