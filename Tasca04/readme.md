@@ -26,3 +26,9 @@ El teniu disponible en el **plec de condicions tècniques** (també al Moodle de
 Index:
 
 [2. Requeriments d'Infraestructura Inicial.md](https://github.com/PerezAran/Projecte3/blob/main/Tasca04/2.%20Requeriments%20d'Infraestructura%20Inicial.md))
+
+[3. Tasques d'Implementació i Configuració del Servidor LDAP](https://github.com/PerezAran/Projecte3/blob/main/Tasca04/3.%20Tasques%20d'Implementaci%C3%B3%20i%20Configuraci%C3%B3%20del%20Servidor%20LDAP.md)
+
+[4. Integració de Client Client Ubuntu Desktop](https://github.com/PerezAran/Projecte3/blob/main/Tasca04/4.%20Integraci%C3%B3%20de%20Client%20(Client%20Ubuntu%20Desktop.md))
+
+[5. Acceptació del Plec de Condicions Tècniques (PCC) - EverPia.md](https://github.com/PerezAran/Projecte3/blob/main/Tasca04/5.%20Acceptaci%C3%B3%20del%20Plec%20de%20Condicions%20T%C3%A8cniques%20(PCC)%20-%20EverPia.md)
