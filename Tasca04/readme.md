@@ -24,4 +24,5 @@ El teniu disponible en el **plec de condicions tècniques** (també al Moodle de
 
 ---
 Index:
+
 [2. Requeriments d'Infraestructura Inicial.md](https://github.com/PerezAran/Projecte3/blob/main/Tasca04/2.%20Requeriments%20d'Infraestructura%20Inicial.md))
