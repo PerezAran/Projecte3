@@ -126,3 +126,5 @@ Benvinguts al repositori del Projecte 3. A continuació es mostra la taula index
 | **T04** | Serveis de directori: LDAP | [Anar a la carpeta](./T04%20Serveis%20de%20directori.%20LDAP/) |
 | **T05** | Anàlisi de l'entorn i models de negoci per a clients | [Anar a la carpeta](./T05%20Anàlisi%20de%20l'entorn%20possibles%20models%20de%20negoci%20pels%20clients%20tecnològics%20de%20la%20consultoria/) |
 | **T06** | Fonaments del servei DNS | [Anar a la carpeta](./T06%20Fonaments%20del%20servei%20DNS/) |
+
+[Anar a presetacio](https://github.com/PerezAran/presentacio)
